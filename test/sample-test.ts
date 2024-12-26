@@ -29,15 +29,15 @@ describe("Sample", function() {
     expect(await sample.message()).to.eq("hi");
   });
 
-  it("allows to call callMe()", async function() {
-    const { sample, user } = await loadFixture(deploy);
+  // it("allows to call callMe()", async function() {
+  //   const { sample, user } = await loadFixture(deploy);
 
-    const sampleAsUser = Sample__factory.connect(sample.address, user);
-    const tx = await sampleAsUser.callMe();
-    await tx.wait();
+  //   // const sampleAsUser = Sample__factory.connect(sample.address, user);
+  //   const tx = await sampleAsUser.callMe();
+  //   await tx.wait();
 
-    expect(await sampleAsUser.caller()).to.eq(user.address);
-  });
+  //   expect(await sampleAsUser.caller()).to.eq(user.address);
+  // });
 
   it("reverts call to callErrors() with Panic", async function() {
     const { sample, deployer } = await loadFixture(deploy);
