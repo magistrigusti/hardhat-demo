@@ -7,7 +7,7 @@ describe("LowkickStarter", function() {
     const [owner, pledger] = await ethers.getSigners();
     const LowkickStarterFactory = await ethers.getContractFactory("LowkickStarter");
     const lowkick: LowkickStarter = await LowkickStarterFactory.deploy();
-    await lowkick.deployed();
+    // await lowkick.deployed();
 
     return { lowkick, owner, pledger }
   };
