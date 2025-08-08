@@ -12,6 +12,8 @@
   "description": "",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.17"
+    "hardhat": "^2.22.17",
+    "dotenv": "^16.0.3",
+    "@matterlabs/hardhat-zksync-toolbox": "^0.1.1"
   }
 }
